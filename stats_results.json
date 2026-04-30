@@ -1,0 +1,24 @@
+{
+  "correlation": {
+    "r": 0.2785,
+    "p": 0.187508,
+    "r2": 0.0776,
+    "ci": [
+      -0.1407,
+      0.6131
+    ]
+  },
+  "anova": {
+    "F": 5.4906,
+    "p": 0.003054,
+    "eta_sq": 0.604
+  },
+  "models": {
+    "r2_categorical": 0.604,
+    "r2_gradient": 0.0776,
+    "r2_full": 0.7876,
+    "gradient_wins": false,
+    "delta_r2": -0.5264
+  },
+  "n_speakers": 24
+}

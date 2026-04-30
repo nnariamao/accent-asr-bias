@@ -1,0 +1,105 @@
+========================================================
+         ACCENT RATING STUDY - RATER TRACKING SHEET
+========================================================
+
+Use this sheet to track the status of each rater's assignment.
+Update the Status field as raters progress through the task.
+
+STATUS OPTIONS: Not Yet Contacted / Invited / Materials Sent /
+                In Progress / Submitted / Complete
+
+
+RATER ASSIGNMENTS
+-----------------
+
+Rater 1 (Tim - Study Coordinator)
+  Name:           Tim
+  Email:          [Your Email]
+  Date Assigned:  _______________
+  Date Sent:      N/A (self-rater)
+  Deadline:       N/A
+  Status:         Complete
+  Notes:          Ratings pre-filled in Rater_1_Tim column.
+
+--
+
+Rater 2
+  Name:           ___________________________
+  Email:          ___________________________
+  Date Assigned:  _______________
+  Date Sent:      _______________
+  Deadline:       _______________
+  Status:         ___________________________
+  Notes:          ___________________________
+
+--
+
+Rater 3
+  Name:           ___________________________
+  Email:          ___________________________
+  Date Assigned:  _______________
+  Date Sent:      _______________
+  Deadline:       _______________
+  Status:         ___________________________
+  Notes:          ___________________________
+
+--
+
+Rater 4
+  Name:           ___________________________
+  Email:          ___________________________
+  Date Assigned:  _______________
+  Date Sent:      _______________
+  Deadline:       _______________
+  Status:         ___________________________
+  Notes:          ___________________________
+
+--
+
+Rater 5
+  Name:           ___________________________
+  Email:          ___________________________
+  Date Assigned:  _______________
+  Date Sent:      _______________
+  Deadline:       _______________
+  Status:         ___________________________
+  Notes:          ___________________________
+
+
+========================================================
+         FOLLOW-UP SCHEDULE REMINDERS
+========================================================
+
+Day 0    Send invitation email with materials and deadline.
+
+Day 2    Send a friendly check-in if no acknowledgment received.
+         ("Just checking you received the materials - let me know
+          if you have any questions!")
+
+Day 4-5  Send a mid-point reminder.
+         ("Friendly reminder - the deadline is in [X] days.
+          Let me know if you need anything!")
+
+Day 6    Send a final reminder (1 day before deadline).
+         ("The deadline is tomorrow. Please submit your completed
+          spreadsheet whenever you are ready!")
+
+Day 7    Deadline. Follow up with any outstanding raters individually.
+
+Day 8+   If no response, decide whether to extend deadline or find
+         a replacement rater.
+
+
+NOTES / LOG
+-----------
+Date        Rater    Action Taken
+----------  -------  ------------------------------------------
+
+
+
+
+
+
+
+
+========================================================

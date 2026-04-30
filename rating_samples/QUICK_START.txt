@@ -1,0 +1,54 @@
+========================================================
+        ACCENT RATING STUDY - QUICK START GUIDE
+========================================================
+
+Welcome! Here is everything you need to get started quickly.
+For full instructions, see RATING_INSTRUCTIONS.txt.
+
+
+WHAT YOU ARE DOING
+------------------
+Listen to 24 audio clips and rate each speaker's accent strength
+using a 1 to 5 scale. Takes about 30 to 45 minutes total.
+
+
+RATING SCALE (use this as a quick reference)
+--------------------------------------------
+  1  =  Minimal accent      (near-native, very subtle)
+  2  =  Slight accent       (noticeable, easy to understand)
+  3  =  Moderate accent     (clearly present, still understandable)
+  4  =  Strong accent       (prominent, may need extra attention)
+  5  =  Very strong accent  (heavy, occasionally hard to follow)
+
+
+4 STEPS TO COMPLETE YOUR RATINGS
+----------------------------------
+  Step 1:  Open the file "accent_rating_sheet_5raters.csv" in Excel,
+           Numbers, or Google Sheets.
+
+  Step 2:  Find your assigned column (e.g., Rater_2, Rater_3, etc.).
+           Only fill in your column.
+
+  Step 3:  For each row, open and play the audio file listed in the
+           "Audio_File" column. Enter your rating (1-5) in your column.
+           Replay clips as needed. Rate all 24 clips.
+
+  Step 4:  Save your completed spreadsheet and send it back to the
+           study coordinator by your assigned deadline.
+
+
+REMINDERS
+----------
+  - Rate pronunciation only. Do not consider fluency or vocabulary.
+  - Go with your honest first impression.
+  - Do not discuss ratings with other raters until after submission.
+  - Every row must have a rating. No blanks.
+
+
+QUESTIONS?
+----------
+  Contact: [COORDINATOR NAME]
+  Email:   [COORDINATOR EMAIL]
+  Phone:   [COORDINATOR PHONE]
+
+========================================================

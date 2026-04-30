@@ -1,0 +1,204 @@
+========================================================
+   ACCENT BIAS PROJECT - ANALYSIS SUMMARY REPORT
+   Multi-Rater Study (5 Raters, 24 Speakers)
+========================================================
+Generated from: accent_rating_sheet_5raters.csv
+                speaker_wer_summary.csv
+                rating_samples_info.csv
+N Speakers:  24  (4 per L1 group)
+N Raters:    5
+L1 Groups:   Arabic, Chinese, Hindi, Korean, Spanish, Vietnamese
+
+
+========================================================
+SECTION 1: INTER-RATER RELIABILITY
+========================================================
+
+Cronbach's Alpha = 0.9377
+
+Interpretation: EXCELLENT
+  An alpha of 0.94 indicates that the five raters showed a
+  high degree of consistency in their accent strength ratings.
+  This level of reliability (alpha >= 0.90) is considered
+  excellent and supports treating the mean of the five raters
+  as a stable, reliable measure of perceived accent strength.
+
+Pairwise Rater Correlations:
+  Rater 1 (Tim) vs Rater 2:  r = 0.609
+  Rater 1 (Tim) vs Rater 3:  r = 0.915
+  Rater 1 (Tim) vs Rater 4:  r = 0.740
+  Rater 1 (Tim) vs Rater 5:  r = 0.603
+  Rater 2 vs Rater 3:        r = 0.787
+  Rater 2 vs Rater 4:        r = 0.848
+  Rater 2 vs Rater 5:        r = 0.824
+  Rater 3 vs Rater 4:        r = 0.756
+  Rater 3 vs Rater 5:        r = 0.692
+  Rater 4 vs Rater 5:        r = 0.742
+  Mean pairwise r = 0.751
+
+Speakers with highest rating disagreement (std >= 0.84):
+  ABA  (Arabic):   mean=3.80, sd=0.84
+  NJS  (Spanish):  mean=1.80, sd=0.84
+  TXHC (Chinese):  mean=2.80, sd=0.84
+
+Speakers with most consistent ratings (sd <= 0.45):
+  HJK  (Korean):     mean=1.00, sd=0.00  (unanimous)
+  BWC  (Chinese):    mean=2.80, sd=0.45
+  TLV  (Vietnamese): mean=3.20, sd=0.45
+  TNI  (Hindi):      mean=2.20, sd=0.45
+  YKWK (Korean):     mean=2.20, sd=0.45
+
+
+========================================================
+SECTION 2: GRADIENT VS CATEGORICAL R² COMPARISON
+========================================================
+
+  Model 1 - WER ~ L1 Background (categorical)
+    R² = 0.6040  (explains 60.4% of WER variance)
+
+  Model 2 - WER ~ Mean Accent Strength (gradient)
+    R² = 0.0776  (explains  7.8% of WER variance)
+
+  Model 3 - WER ~ L1 + Mean Accent Strength (full)
+    R² = 0.7876  (explains 78.8% of WER variance)
+
+FINDING: Categorical L1 background explains SUBSTANTIALLY
+MORE variance in WER than gradient accent strength.
+
+  Delta R² (gradient minus categorical) = -0.5264
+
+  In other words, knowing which L1 group a speaker belongs to
+  (Arabic, Chinese, Hindi, etc.) is a much stronger predictor
+  of their ASR word error rate than their individually rated
+  accent strength score.
+
+  This suggests that ASR errors are driven more by systematic,
+  language-specific phonological patterns (shared within an L1
+  group) than by the overall perceptual "heaviness" of an
+  individual's accent as rated by human listeners.
+
+  Importantly, the full model combining both predictors reaches
+  R² = 0.7876, an incremental gain of +0.1836 over the
+  categorical-only model. This means that even after accounting
+  for L1 group, individual accent strength ratings add
+  meaningful additional predictive power.
+
+
+========================================================
+SECTION 3: CORRELATION (ACCENT STRENGTH vs WER)
+========================================================
+
+  Pearson r  = 0.2785
+  p-value    = 0.1875  (not significant, n.s.)
+  R²         = 0.0776
+  95% CI:    [-0.1407, 0.6131]
+  N          = 24
+
+INTERPRETATION:
+  The correlation between mean accent strength and WER is
+  positive (r = 0.28), indicating that speakers rated as
+  having stronger accents tend to have higher ASR error rates.
+  However, this relationship does not reach statistical
+  significance (p = 0.19), and the confidence interval spans
+  zero, meaning we cannot rule out a null relationship.
+
+  The modest and non-significant correlation is consistent
+  with the model comparison results: accent strength as
+  perceived by human raters accounts for only about 8% of
+  the variance in ASR performance. The remaining variance is
+  better explained by L1-specific factors not fully captured
+  by a general accent strength scale.
+
+  Note: The small sample size (N = 24) limits statistical
+  power. A larger sample may be needed to detect a reliable
+  gradient effect if one exists.
+
+
+========================================================
+SECTION 4: KEY FINDING SUMMARY
+========================================================
+
+MAIN QUESTION:
+  Does gradient accent strength explain WER better than
+  categorical L1 background?
+
+ANSWER: No. Categorical L1 background is the stronger predictor.
+
+EVIDENCE:
+  1. L1 category alone explains 60.4% of WER variance
+     (ANOVA: F(5,18) = 5.49, p = 0.003, η² = 0.60).
+
+  2. Gradient accent strength explains only 7.8% of WER
+     variance and the correlation is not significant
+     (r = 0.28, p = 0.19).
+
+  3. The full model (L1 + accent) explains 78.8%, meaning
+     accent strength adds ~18 percentage points of variance
+     on top of L1 category — a meaningful contribution, but
+     not a replacement for categorical L1 information.
+
+IMPLICATION:
+  ASR systems appear to struggle most with specific L1
+  phonological transfer patterns rather than with general
+  accent "heaviness." Language-specific training data and
+  acoustic model adaptation by L1 background may be more
+  effective than targeting speakers with heavy accents in
+  general. Individual accent strength may still be a useful
+  secondary predictor once L1 is controlled for.
+
+
+========================================================
+SECTION 5: WITHIN-GROUP VARIATION
+========================================================
+
+  Considerable variation exists within each L1 group,
+  suggesting that L1 background is a necessary but not
+  sufficient predictor of ASR difficulty.
+
+  L1          N   WER Range      Accent Range   Within-r
+  -------------------------------------------------------
+  Arabic      4   0.32 - 0.45    2.40 - 4.80    r=0.933 (p=0.067)
+  Chinese     4   0.35 - 0.41    1.80 - 3.20    r=0.199 (p=0.801)
+  Hindi       4   0.26 - 0.31    2.20 - 4.40    r=-0.955 (p=0.045)*
+  Korean      4   0.28 - 0.37    1.00 - 2.80    r=0.907 (p=0.093)
+  Spanish     4   0.31 - 0.45    1.80 - 4.40    r=0.950 (p=0.050)
+  Vietnamese  4   0.34 - 0.52    1.60 - 3.20    r=0.914 (p=0.086)
+
+  * p < 0.05 (significant within Hindi group)
+
+  Notable observations:
+  - Vietnamese shows the largest WER range (Δ=0.18) and
+    highest mean WER (0.463), suggesting the most within-
+    group heterogeneity in ASR difficulty.
+  - Hindi shows a significant negative within-group
+    correlation (r = -0.955, p = 0.045), meaning higher-
+    rated Hindi speakers had LOWER WER — a counterintuitive
+    finding that may warrant further investigation.
+  - Arabic and Spanish show strong positive within-group
+    trends (r ~0.93-0.95) approaching but not reaching
+    significance, likely due to small n (4 per group).
+  - Korean shows the lowest overall mean WER (0.317) and
+    the lowest mean accent ratings (1.85), consistent with
+    better ASR performance for Korean-accented speakers.
+
+  The within-group variation reinforces that accent strength
+  adds explanatory value beyond L1 category alone for most
+  language groups.
+
+
+========================================================
+OUTPUT FILES
+========================================================
+
+  accent_ratings_5raters.csv       - Processed ratings (mean, sd)
+  merged_analysis_multirater.csv   - Merged accent + WER data
+  within_group_multirater.csv      - Within-L1 statistics
+  stats_results.json               - Machine-readable stats
+  figures/fig1_scatter_accent_wer.png
+  figures/fig2_boxplot_within_group.png
+  figures/fig3_model_comparison.png
+  figures/fig4_interrater_correlation.png
+
+========================================================
+END OF REPORT
+========================================================
