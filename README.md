@@ -22,7 +22,6 @@ accent_bias_project/data/l2arctic_release_v5/
 scripts/                  Analysis and processing scripts
 figures/                  Generated figures (300 dpi PNG)
 results/                  Output CSVs from ASR evaluation
-rating_samples/           Rater instructions and quick-start guide
 accent_rating_sheet_5raters.csv    Raw ratings from all 5 raters
 accent_ratings_5raters.csv         Processed ratings (mean, SD per speaker)
 speaker_wer_summary.csv            Per-speaker WER from Whisper
